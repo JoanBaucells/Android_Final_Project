@@ -5,6 +5,7 @@ public class User {
     private String password;
     private String rol;
 
+
     public User(String username, String password, String rol) {
         this.username = username;
         this.password = password;
@@ -33,5 +34,14 @@ public class User {
 
     public void setRol(String rol) {
         this.rol = rol;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", rol='" + rol + '\'' +
+                '}';
     }
 }

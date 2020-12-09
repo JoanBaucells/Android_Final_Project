@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.uvic.padlemanager.Singleton.App_singleton;
 import com.uvic.padlemanager.ui.login.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {
@@ -24,4 +25,5 @@ public class SplashActivity extends AppCompatActivity {
             }
         }, DELAY);
     }
+
 }
