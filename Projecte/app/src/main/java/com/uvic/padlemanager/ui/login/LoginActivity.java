@@ -26,6 +26,7 @@ import android.widget.Toast;
 
 import com.uvic.padlemanager.CompetitionGalleryActivity;
 import com.uvic.padlemanager.R;
+import com.uvic.padlemanager.Sign_Up_Activity;
 import com.uvic.padlemanager.SplashActivity;
 import com.uvic.padlemanager.ui.login.LoginViewModel;
 import com.uvic.padlemanager.ui.login.LoginViewModelFactory;
@@ -133,5 +134,11 @@ public class LoginActivity extends AppCompatActivity {
 
     private void showLoginFailed(@StringRes Integer errorString) {
         Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
+    }
+
+    public void signUp(View view){
+        Intent intent = new Intent(LoginActivity.this, Sign_Up_Activity.class);
+        startActivity(intent);
+        finish();
     }
 }
