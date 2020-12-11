@@ -67,37 +67,53 @@ public class Sign_Up_Activity extends AppCompatActivity {
     }
 
     public boolean validatePassword(String password, String confirmPassword) {
-        boolean bAllFilled = true;
+        boolean bValidacions = true;
         if(editUsername.getText().toString().equals("")){
-            bAllFilled = false;
+            bValidacions = false;
+        }
+        if(userExist(editUsername.getText().toString())){
+           editUsername.setError("User already exist!!");
+            bValidacions = false;
         }
         if(editName.getText().toString().equals("")) {
-            bAllFilled = false;
+            bValidacions = false;
         }
         if(editSurname.getText().toString().equals("")){
-            bAllFilled = false;
+            bValidacions = false;
         }
         if(editEmail.getText().toString().equals("")){
-            bAllFilled = false;
+            bValidacions = false;
         }
         if(editPhone.getText().toString().equals("")){
-            bAllFilled = false;
+            bValidacions = false;
         }
         if (!isPasswordValid(password)) {
             editPassword.setError(getString(R.string.invalid_password));
-            bAllFilled = false;
+            bValidacions = false;
         }else if(!isSamePassword(password, confirmPassword)){
             editConfirmPassword.setError("The passwords must be the same.");
-            bAllFilled = false;
+            bValidacions = false;
         }
         if(password.equals("")){
-            bAllFilled = false;
+            bValidacions = false;
         }
         if(confirmPassword.equals("")){
-            bAllFilled = false;
+            bValidacions = false;
         }
 
-        return bAllFilled;
+        return bValidacions;
+    }
+
+
+    private boolean userExist(String username){
+        boolean bExist = false;
+        for (User user: App_singleton.getInstance().getList_users()) {
+            if(user.getUsername().equals(username)){
+                bExist = true;
+                break;
+            }
+        }
+        return bExist;
     }
 
     // A placeholder password validation check

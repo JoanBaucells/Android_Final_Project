@@ -26,6 +26,7 @@ public class App_singleton {
     private ArrayList<User> list_users;
     private ArrayList<Competidor> list_competidors;
     private User user;
+    private String sError;
 
 
     private static class SingletonInstance {
@@ -56,6 +57,10 @@ public class App_singleton {
         this.context = c;
         sync();
         Create_Admin();
+    }
+
+    public String getsError() {
+        return sError;
     }
 
     private void Create_Admin(){
@@ -110,8 +115,8 @@ public class App_singleton {
         setFile(new Gson().toJson(this.list_users), USERS_FILE);
     }
     public void addUser(User u){
-        this.list_users.add(u);
-        setFile(new Gson().toJson(this.list_users), USERS_FILE);
+            this.list_users.add(u);
+            setFile(new Gson().toJson(this.list_users), USERS_FILE);
     }
 
     public  ArrayList<Competidor> getList_competidors(){ return this.list_competidors; }
