@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/salvarCompeticio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="112dp"
+        android:enabled="false"
+        android:text="Salvar"
+        android:textColor="#212121"
+        app:backgroundTint="#689F38"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.182" />
+
+    <EditText
+        android:id="@+id/descripcioCompeticio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150"
+        android:ems="10"
+        android:hint="Descripció"
+        android:inputType="date"
+        android:textColor="#689F38"
+        android:textColorHint="#8BC34A"
+        app:layout_constraintEnd_toEndOf="@+id/dataCompeticio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dataCompeticio"
+        tools:layout_editor_absoluteY="421dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edita la competició"
+        android:textColor="#689F38"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <EditText
+        android:id="@+id/poblacioCompeticio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150"
+        android:ems="10"
+        android:hint="Població"
+        android:inputType="textPersonName"
+        android:textColor="#689F38"
+        android:textColorHint="#8BC34A"
+        app:layout_constraintEnd_toEndOf="@+id/preuCompeticio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/preuCompeticio"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <EditText
+        android:id="@+id/preuCompeticio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150"
+        android:ems="10"
+        android:hint="Preu"
+        android:inputType="number"
+        android:textColor="#689F38"
+        android:textColorHint="#8BC34A"
+        app:layout_constraintEnd_toEndOf="@+id/nomCompeticio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nomCompeticio"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <EditText
+        android:id="@+id/nomCompeticio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150"
+        android:ems="10"
+        android:hint="Nom"
+        android:inputType="textPersonName"
+        android:textColor="#689F38"
+        android:textColorHint="#8BC34A"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <EditText
+        android:id="@+id/ParticipantsCompeticio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150"
+        android:ems="10"
+        android:hint="Participants"
+        android:inputType="number"
+        android:textColor="#689F38"
+        android:textColorHint="#8BC34A"
+        app:layout_constraintEnd_toEndOf="@+id/poblacioCompeticio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/poblacioCompeticio"
+        tools:layout_editor_absoluteY="302dp" />
+
+    <EditText
+        android:id="@+id/dataCompeticio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150"
+        android:ems="10"
+        android:hint="data"
+        android:inputType="date"
+        android:textColor="#689F38"
+        android:textColorHint="#8BC34A"
+        app:layout_constraintEnd_toEndOf="@+id/ParticipantsCompeticio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ParticipantsCompeticio"
+        tools:layout_editor_absoluteY="361dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
