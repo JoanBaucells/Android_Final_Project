@@ -45,12 +45,12 @@ public class App_singleton {
         Gson gson = new Gson();
         //
         sb = getFile(USER_FILE);
-        this.user = gson.fromJson(sb.toString() ,User.class);
+        if(sb.equals("")) this.user = gson.fromJson(sb.toString() ,User.class);
         sb = getFile(USERS_FILE);
-        this.list_users = gson.fromJson(sb.toString(), typeList);
+        if(sb.equals("")) this.list_users = gson.fromJson(sb.toString(), typeList);
         sb = getFile(COMPETITOR_FILE);
         typeList = new TypeToken<List<Competidor>>() {}.getType();
-        this.list_competidors = gson.fromJson(sb.toString(), typeList);
+        if(sb.equals("")) this.list_competidors = gson.fromJson(sb.toString(), typeList);
     }
     public void setContext(Context c){
         this.context = c;
