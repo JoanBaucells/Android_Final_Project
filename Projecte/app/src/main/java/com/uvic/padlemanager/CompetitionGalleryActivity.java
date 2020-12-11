@@ -3,6 +3,7 @@ package com.uvic.padlemanager;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
 public class CompetitionGalleryActivity extends AppCompatActivity {
 
@@ -10,5 +11,9 @@ public class CompetitionGalleryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_competition_gallery);
+    }
+
+    public void signOut(View view){
+
     }
 }

@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".CompetitionGalleryActivity">
 
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="177dp"
+        android:layout_height="67dp"
+        android:text="Sign out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
