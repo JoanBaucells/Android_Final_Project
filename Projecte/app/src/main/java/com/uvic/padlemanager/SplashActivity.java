@@ -21,8 +21,8 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                User u = App_singleton.getInstance().getUser();
-                if(u == null){
+                String username = App_singleton.getInstance().getUser().getUsername();
+                if(username.toString().equals("")){
                     Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                     startActivity(intent);
                     finish();
