@@ -25,21 +25,6 @@
         app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.182" />
 
-    <EditText
-        android:id="@+id/descripcioCompeticio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="150"
-        android:ems="10"
-        android:hint="Descripció"
-        android:inputType="date"
-        android:textColor="#689F38"
-        android:textColorHint="#8BC34A"
-        app:layout_constraintEnd_toEndOf="@+id/dataCompeticio"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/dataCompeticio"
-        tools:layout_editor_absoluteY="421dp" />
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -58,7 +43,7 @@
         android:id="@+id/poblacioCompeticio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="150"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Població"
         android:inputType="textPersonName"
@@ -67,13 +52,13 @@
         app:layout_constraintEnd_toEndOf="@+id/preuCompeticio"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/preuCompeticio"
-        tools:layout_editor_absoluteY="244dp" />
+        app:layout_constraintTop_toBottomOf="@+id/preuCompeticio" />
 
     <EditText
         android:id="@+id/preuCompeticio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="150"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Preu"
         android:inputType="number"
@@ -82,26 +67,26 @@
         app:layout_constraintEnd_toEndOf="@+id/nomCompeticio"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/nomCompeticio"
-        tools:layout_editor_absoluteY="187dp" />
+        app:layout_constraintTop_toBottomOf="@+id/nomCompeticio" />
 
     <EditText
         android:id="@+id/nomCompeticio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="150"
+        android:layout_marginTop="120dp"
         android:ems="10"
         android:hint="Nom"
         android:inputType="textPersonName"
         android:textColor="#689F38"
         android:textColorHint="#8BC34A"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="131dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="44dp" />
 
     <EditText
         android:id="@+id/ParticipantsCompeticio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="150"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Participants"
         android:inputType="number"
@@ -110,13 +95,12 @@
         app:layout_constraintEnd_toEndOf="@+id/poblacioCompeticio"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/poblacioCompeticio"
-        tools:layout_editor_absoluteY="302dp" />
+        app:layout_constraintTop_toBottomOf="@+id/poblacioCompeticio" />
 
     <EditText
         android:id="@+id/dataCompeticio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="150"
         android:ems="10"
         android:hint="data"
         android:inputType="date"
@@ -125,6 +109,21 @@
         app:layout_constraintEnd_toEndOf="@+id/ParticipantsCompeticio"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/ParticipantsCompeticio"
-        tools:layout_editor_absoluteY="361dp" />
+        tools:layout_editor_absoluteY="329dp" />
+
+    <EditText
+        android:id="@+id/descripcioCompeticio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:ems="10"
+        android:hint="Descripció"
+        android:inputType="date"
+        android:textColor="#689F38"
+        android:textColorHint="#8BC34A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dataCompeticio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dataCompeticio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
