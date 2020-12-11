@@ -5,6 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DCEDC8"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -16,11 +17,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="164dp"
         android:layout_marginEnd="24dp"
         android:hint="Username"
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
+        android:textColor="#689F38"
+        android:textColorHighlight="#689F38"
+        android:textColorHint="#8BC34A"
+        android:textColorLink="#689F38"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,13 +35,17 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:hint="@string/prompt_password"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
+        android:textColor="#689F38"
+        android:textColorHighlight="#689F38"
+        android:textColorHint="#8BC34A"
+        android:textColorLink="#689F38"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
@@ -52,12 +61,14 @@
         android:layout_marginBottom="64dp"
         android:enabled="false"
         android:text="@string/action_sign_in_short"
+        android:textColor="#212121"
+        app:backgroundTint="#689F38"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintHorizontal_bias="0.853"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.218" />
+        app:layout_constraintVertical_bias="0.182" />
 
     <Button
         android:id="@+id/signup"
@@ -70,12 +81,14 @@
         android:layout_marginBottom="64dp"
         android:onClick="signUp"
         android:text="Sign up"
+        android:textColor="#212121"
+        app:backgroundTint="#737373"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.226" />
+        app:layout_constraintVertical_bias="0.192" />
 
     <ProgressBar
         android:id="@+id/loading"
@@ -92,4 +105,43 @@
         app:layout_constraintStart_toStartOf="@+id/password"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Benvingut al Padel Manager"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#689F38"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="289dp"
+        android:layout_height="334dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/padel_fons" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No estàs registrat?"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accés"
+        android:textColor="#689F38"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="121dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
