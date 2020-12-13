@@ -65,8 +65,8 @@ public class CompetitionGalleryActivity extends AppCompatActivity {
                 startActivity(i);
                 return true;
             case R.id.profile:
-                /*i = new Intent(CompetitionGalleryActivity.this, ProfileActivity.class);
-                startActivity(i);*/
+                i = new Intent(CompetitionGalleryActivity.this, profileActivity.class);
+                startActivity(i);
                 return  true;
             default:
                 return  super.onOptionsItemSelected(item);

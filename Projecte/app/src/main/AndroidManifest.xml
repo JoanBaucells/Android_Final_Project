@@ -3,16 +3,17 @@
     package="com.uvic.jbaucellsssales">
 
     <application
-        android:name="com.uvic.jbaucellsssales.Aplication_Class.App_aplication"
+        android:name=".Aplication_Class.App_aplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.jbaucellsssales">
-        <activity android:name="com.uvic.jbaucellsssales.afegir_competicio"></activity>
+        <activity android:name=".profileActivity"></activity>
+        <activity android:name=".afegir_competicio" />
         <activity
-            android:name="com.uvic.jbaucellsssales.SplashActivity"
+            android:name=".SplashActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,11 +22,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.uvic.jbaucellsssales.ui.login.LoginActivity"
+            android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login" />
-        <activity android:name="com.uvic.jbaucellsssales.CompetitionGalleryActivity" />
-        <activity android:name="com.uvic.jbaucellsssales.Sign_Up_Activity" />
-        <activity android:name="com.uvic.jbaucellsssales.InscriuresActivity" />
+        <activity android:name=".CompetitionGalleryActivity" />
+        <activity android:name=".Sign_Up_Activity" />
+        <activity android:name=".InscriuresActivity" />
     </application>
 
 </manifest>
