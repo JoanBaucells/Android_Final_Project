@@ -63,6 +63,7 @@ public class CompetitionGalleryActivity extends AppCompatActivity {
             case R.id.logOut:
                 i = new Intent(CompetitionGalleryActivity.this, LoginActivity.class);
                 startActivity(i);
+                finish();
                 return true;
             case R.id.profile:
                 i = new Intent(CompetitionGalleryActivity.this, profileActivity.class);

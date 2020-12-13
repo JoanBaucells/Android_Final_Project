@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="112dp"
         android:enabled="false"
@@ -21,12 +20,10 @@
         app:backgroundTint="#689F38"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.182" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imatge"
         android:layout_width="210dp"
         android:layout_height="219dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,48 +37,56 @@
         android:id="@+id/nomPerfil"
         android:layout_width="119dp"
         android:layout_height="35dp"
+        android:layout_marginBottom="10dp"
         android:ems="10"
         android:hint="Nom"
         android:inputType="textPersonName"
         android:textColor="#689F38"
         android:textColorHint="#8BC34A"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="322dp" />
+        app:layout_constraintBottom_toTopOf="@+id/cognomPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imatge"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/cognomPerfil"
         android:layout_width="119dp"
         android:layout_height="35dp"
+        android:layout_marginBottom="10dp"
         android:ems="10"
         android:hint="Cognom"
         android:inputType="textPersonName"
         android:textColor="#689F38"
         android:textColorHint="#8BC34A"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="367dp" />
+        app:layout_constraintBottom_toTopOf="@+id/telefonPerfil"
+        app:layout_constraintStart_toStartOf="@+id/nomPerfil" />
 
     <EditText
         android:id="@+id/telefonPerfil"
         android:layout_width="119dp"
         android:layout_height="35dp"
+        android:layout_marginBottom="10dp"
         android:ems="10"
         android:hint="Telefon"
         android:inputType="textPersonName"
         android:textColor="#689F38"
         android:textColorHint="#8BC34A"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="417dp" />
+        app:layout_constraintBottom_toTopOf="@+id/correuPerfil"
+        app:layout_constraintStart_toEndOf="@+id/cognomPerfil"
+        app:layout_constraintStart_toStartOf="@+id/cognomPerfil" />
 
     <EditText
         android:id="@+id/correuPerfil"
         android:layout_width="119dp"
         android:layout_height="35dp"
+        android:layout_marginBottom="72dp"
         android:ems="10"
         android:hint="Correu"
         android:inputType="textPersonName"
         android:textColor="#689F38"
         android:textColorHint="#8BC34A"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="465dp" />
+        app:layout_constraintBottom_toTopOf="@+id/salvarPerfil"
+        app:layout_constraintStart_toStartOf="@+id/telefonPerfil" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

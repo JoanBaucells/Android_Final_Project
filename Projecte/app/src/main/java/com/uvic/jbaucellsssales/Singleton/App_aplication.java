@@ -1,4 +1,4 @@
-package com.uvic.jbaucellsssales.Aplication_Class;
+package com.uvic.jbaucellsssales.Singleton;
 
 import android.app.Application;
 
