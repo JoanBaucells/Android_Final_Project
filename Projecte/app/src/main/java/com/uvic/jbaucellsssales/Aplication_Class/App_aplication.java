@@ -1,8 +1,8 @@
-package com.uvic.padlemanager.Aplication_Class;
+package com.uvic.jbaucellsssales.Aplication_Class;
 
 import android.app.Application;
 
-import com.uvic.padlemanager.Singleton.App_singleton;
+import com.uvic.jbaucellsssales.Singleton.App_singleton;
 
 public class App_aplication extends Application {
     @Override

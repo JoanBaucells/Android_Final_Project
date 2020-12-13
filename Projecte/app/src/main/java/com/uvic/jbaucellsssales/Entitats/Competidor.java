@@ -1,4 +1,4 @@
-package com.uvic.padlemanager.Entitats;
+package com.uvic.jbaucellsssales.Entitats;
 
 public class Competidor {
     private String nom;

@@ -1,4 +1,4 @@
-package com.uvic.padlemanager.ui.login;
+package com.uvic.jbaucellsssales.ui.login;
 
 import androidx.annotation.Nullable;
 

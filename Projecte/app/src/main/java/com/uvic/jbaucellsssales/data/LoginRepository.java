@@ -1,6 +1,6 @@
-package com.uvic.padlemanager.data;
+package com.uvic.jbaucellsssales.data;
 
-import com.uvic.padlemanager.data.model.LoggedInUser;
+import com.uvic.jbaucellsssales.data.model.LoggedInUser;
 
 /**
  * Class that requests authentication and user information from the remote data source and

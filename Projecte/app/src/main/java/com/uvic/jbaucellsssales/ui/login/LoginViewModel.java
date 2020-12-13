@@ -1,4 +1,4 @@
-package com.uvic.padlemanager.ui.login;
+package com.uvic.jbaucellsssales.ui.login;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -6,10 +6,10 @@ import androidx.lifecycle.ViewModel;
 
 import android.util.Patterns;
 
-import com.uvic.padlemanager.data.LoginRepository;
-import com.uvic.padlemanager.data.Result;
-import com.uvic.padlemanager.data.model.LoggedInUser;
-import com.uvic.padlemanager.R;
+import com.uvic.jbaucellsssales.data.LoginRepository;
+import com.uvic.jbaucellsssales.data.Result;
+import com.uvic.jbaucellsssales.data.model.LoggedInUser;
+import com.uvic.jbaucellsssales.R;
 
 public class LoginViewModel extends ViewModel {
 

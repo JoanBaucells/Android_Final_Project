@@ -1,4 +1,4 @@
-package com.uvic.padlemanager.ui.login;
+package com.uvic.jbaucellsssales.ui.login;
 
 /**
  * Class exposing authenticated user details to the UI.

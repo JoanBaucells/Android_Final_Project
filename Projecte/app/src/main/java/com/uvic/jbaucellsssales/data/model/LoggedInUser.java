@@ -1,4 +1,4 @@
-package com.uvic.padlemanager.data.model;
+package com.uvic.jbaucellsssales.data.model;
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository

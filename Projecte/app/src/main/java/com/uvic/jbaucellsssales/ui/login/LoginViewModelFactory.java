@@ -1,11 +1,11 @@
-package com.uvic.padlemanager.ui.login;
+package com.uvic.jbaucellsssales.ui.login;
 
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.annotation.NonNull;
 
-import com.uvic.padlemanager.data.LoginDataSource;
-import com.uvic.padlemanager.data.LoginRepository;
+import com.uvic.jbaucellsssales.data.LoginDataSource;
+import com.uvic.jbaucellsssales.data.LoginRepository;
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.

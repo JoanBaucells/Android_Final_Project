@@ -1,4 +1,4 @@
-package com.uvic.padlemanager;
+package com.uvic.jbaucellsssales;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,9 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.uvic.padlemanager.Entitats.User;
-import com.uvic.padlemanager.Singleton.App_singleton;
-import com.uvic.padlemanager.ui.login.LoginActivity;
+import com.uvic.jbaucellsssales.ui.login.LoginActivity;
+import com.uvic.jbaucellsssales.R;
+import com.uvic.jbaucellsssales.Singleton.App_singleton;
 
 public class SplashActivity extends AppCompatActivity {
 

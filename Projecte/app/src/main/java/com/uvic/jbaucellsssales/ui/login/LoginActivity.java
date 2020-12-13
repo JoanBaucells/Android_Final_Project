@@ -1,4 +1,4 @@
-package com.uvic.padlemanager.ui.login;
+package com.uvic.jbaucellsssales.ui.login;
 
 import android.app.Activity;
 
@@ -14,7 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -24,16 +23,17 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.uvic.padlemanager.CompetitionGalleryActivity;
-import com.uvic.padlemanager.R;
-import com.uvic.padlemanager.Sign_Up_Activity;
-import com.uvic.padlemanager.SplashActivity;
-import com.uvic.padlemanager.ui.login.LoginViewModel;
-import com.uvic.padlemanager.ui.login.LoginViewModelFactory;
+import com.uvic.jbaucellsssales.CompetitionGalleryActivity;
+import com.uvic.jbaucellsssales.Entitats.User;
+import com.uvic.jbaucellsssales.Singleton.App_singleton;
+import com.uvic.jbaucellsssales.R;
+import com.uvic.jbaucellsssales.Sign_Up_Activity;
 
 public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
+    private EditText usernameEditText;
+    private EditText passwordEditText;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,8 +42,8 @@ public class LoginActivity extends AppCompatActivity {
         loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
 
-        final EditText usernameEditText = findViewById(R.id.username);
-        final EditText passwordEditText = findViewById(R.id.password);
+        usernameEditText = findViewById(R.id.username);
+        passwordEditText = findViewById(R.id.password);
         final Button loginButton = findViewById(R.id.login);
         final ProgressBar loadingProgressBar = findViewById(R.id.loading);
 
@@ -75,14 +75,17 @@ public class LoginActivity extends AppCompatActivity {
                 }
                 if (loginResult.getSuccess() != null) {
                     updateUiWithUser(loginResult.getSuccess());
-                }
-                setResult(Activity.RESULT_OK);
-                //
+                    String userName = usernameEditText.getText().toString();
+                    String passWord = passwordEditText.getText().toString();
+                    User u = new User(userName, passWord, App_singleton.getInstance().getUser_Rol(userName));
+                    App_singleton.getInstance().setUser(u);
+                    setResult(Activity.RESULT_OK);
+                    //Complete and destroy login activity once successful
+                    Intent intent = new Intent(LoginActivity.this, CompetitionGalleryActivity.class);
+                    startActivity(intent);
+                    finish();
 
-                //Complete and destroy login activity once successful
-                Intent intent = new Intent(LoginActivity.this, CompetitionGalleryActivity.class);
-                startActivity(intent);
-                finish();
+                }
             }
         });
 

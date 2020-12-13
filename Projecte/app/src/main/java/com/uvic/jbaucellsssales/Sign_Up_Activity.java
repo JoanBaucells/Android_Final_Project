@@ -1,4 +1,4 @@
-package com.uvic.padlemanager;
+package com.uvic.jbaucellsssales;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,9 +10,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.uvic.padlemanager.Entitats.Competidor;
-import com.uvic.padlemanager.Entitats.User;
-import com.uvic.padlemanager.Singleton.App_singleton;
+import com.uvic.jbaucellsssales.Entitats.Competidor;
+import com.uvic.jbaucellsssales.Entitats.User;
+import com.uvic.jbaucellsssales.R;
+import com.uvic.jbaucellsssales.Singleton.App_singleton;
 
 public class Sign_Up_Activity extends AppCompatActivity {
 
@@ -149,7 +150,7 @@ public class Sign_Up_Activity extends AppCompatActivity {
         App_singleton.getInstance().addCompetidor(c);
         App_singleton.getInstance().setUser(u);
 
-        Intent intent = new Intent(Sign_Up_Activity.this, Usuaris.class);
+        Intent intent = new Intent(Sign_Up_Activity.this, CompetitionGalleryActivity.class);
         startActivity(intent);
         finish();
     }

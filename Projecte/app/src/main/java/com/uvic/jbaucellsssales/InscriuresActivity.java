@@ -1,8 +1,10 @@
-package com.uvic.padlemanager;
+package com.uvic.jbaucellsssales;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.uvic.jbaucellsssales.R;
 
 public class InscriuresActivity extends AppCompatActivity {
 

@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.uvic.padlemanager"
+        applicationId "com.uvic.jbaucellsssales"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
