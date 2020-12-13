@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "PadleManager"
+rootProject.name = "Padel Manager"

@@ -12,7 +12,6 @@ import android.widget.EditText;
 
 import com.uvic.jbaucellsssales.Entitats.Competidor;
 import com.uvic.jbaucellsssales.Entitats.User;
-import com.uvic.jbaucellsssales.R;
 import com.uvic.jbaucellsssales.Singleton.App_singleton;
 
 public class Sign_Up_Activity extends AppCompatActivity {
