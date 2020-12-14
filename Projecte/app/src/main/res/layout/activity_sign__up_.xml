@@ -9,8 +9,8 @@
 
     <EditText
         android:id="@+id/signup_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
         android:layout_marginTop="140dp"
         android:ems="10"
         android:hint="Username"
@@ -26,8 +26,8 @@
 
     <EditText
         android:id="@+id/signup_surname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
         android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="Surname"
@@ -43,8 +43,8 @@
 
     <EditText
         android:id="@+id/signup_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Password"
@@ -60,9 +60,9 @@
 
     <EditText
         android:id="@+id/signup_telefon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:hint="Telefon"
         android:inputType="textPersonName"
@@ -77,8 +77,8 @@
 
     <EditText
         android:id="@+id/signup_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
         android:layout_marginTop="56dp"
         android:ems="10"
         android:hint="Email"
@@ -94,8 +94,8 @@
 
     <EditText
         android:id="@+id/signup_confirmpassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Confirm Password"
@@ -111,8 +111,8 @@
 
     <EditText
         android:id="@+id/signup_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Name"
