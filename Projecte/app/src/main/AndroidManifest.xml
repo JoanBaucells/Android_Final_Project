@@ -10,7 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.jbaucellsssales">
-        <activity android:name=".profileActivity"></activity>
+        <activity
+            android:name=".inscriure"
+            android:label="@string/title_activity_inscriure"
+            android:theme="@style/Theme.jbaucellsssales.NoActionBar"></activity>
+        <activity android:name=".profileActivity" />
         <activity android:name=".afegir_competicio" />
         <activity
             android:name=".SplashActivity"
